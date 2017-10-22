@@ -49,9 +49,6 @@
 			} else {
 				echo $stmt->error;
 			}
-			
-			;
-			
 			$stmt->close();
 		}
 
