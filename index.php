@@ -1,9 +1,11 @@
 <?php
 
+	session_start();
 	if (!isset($_SESSION['teacher_id'])) {
 		header("Location: login.php");
 	} 
 	
+	include 'dashboard.php';
 	include 'misc/header.php';
 
 ?>
