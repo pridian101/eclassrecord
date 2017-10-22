@@ -25,10 +25,10 @@
 		$stmt->bind_param("i", $uid);
 		$stmt->execute();
 		$stmt->bind_result($teacher_id);
-		$_SESSION['teacher_id'] = $stmt->fetch();
+		$stmt->fetch();
+		$_SESSION['teacher_id'] = $teacher_id;
 		$stmt->close();
-		//header("Location: index.php");
-		var_dump($_SESSION['teacher_id']);
+		header("Location: index.php");
 	} else {
 		header("Location: login.php");
 	}
