@@ -9,9 +9,7 @@
 
 		function __construct()
 		{
-			if (session_status() == PHP_SESSION_NONE) {
-			    session_start();
-			}
+			session_start();
 			// Create connection
 			$this->conn = new mysqli("db4free.net:3306/elective3", "elective3", "elective3", "elective3");
 
