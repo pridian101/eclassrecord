@@ -5,7 +5,6 @@
 // 		header("Location: login.php");
 // 	} 
 	
-	include 'dashboard.php';
 	include 'misc/header.php';
 
 ?>
