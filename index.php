@@ -1,9 +1,8 @@
 <?php
 
-	var_dump(session_status());
-// 	if (!isset($_SESSION['teacher_id'])) {
-// 		header("Location: login.php");
-// 	} 
+	if (!isset($_SESSION['teacher_id'])) {
+		header("Location: login.php");
+	} 
 	
 	include 'misc/header.php';
 
