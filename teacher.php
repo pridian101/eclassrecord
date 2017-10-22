@@ -9,7 +9,7 @@
 		function __construct()
 		{
 			// Create connection
-			$this->conn = new mysqli("db4free.net:3306/mainbookstore", "elective3", "elective3", "elective3");
+			$this->conn = new mysqli("db4free.net:3306/elective3", "elective3", "elective3", "elective3");
 
 			// Check connection
 			if ($this->conn->connect_error) {
