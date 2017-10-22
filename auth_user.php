@@ -1,6 +1,6 @@
 <?php
 
-	require('connection.php');
+	include 'connection.php';
 
 	extract($_POST);
 	$query = "SELECT user_id, password FROM users WHERE username=?";
