@@ -21,8 +21,4 @@
 	$result = $conn->query($query);
 	$row = $result->fetch_array(MYSQLI_NUM);
 	$result->free();
-	if ($row > 0) {
-		echo "<style type='text/css'>#alert{display:none;";
-	}
-
 ?>
