@@ -27,7 +27,8 @@
 		$stmt->bind_result($teacher_id);
 		$_SESSION['teacher_id'] = $stmt->fetch();
 		$stmt->close();
-		header("Location: index.php");
+		//header("Location: index.php");
+		var_dump($_SESSION['teacher_id']);
 	} else {
 		header("Location: login.php");
 	}
