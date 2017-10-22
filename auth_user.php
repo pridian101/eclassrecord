@@ -23,7 +23,7 @@
 		$stmt->close();
 		header("Location: index.php");
 	} else {
-		header("Location: login.php");
+		echo $conn->error);
 	}
 
 ?>
