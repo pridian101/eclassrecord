@@ -6,22 +6,9 @@
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
-        <script>
-          // Initialize Firebase
-          var config = {
-            apiKey: "AIzaSyAbRxSiIbQ9BD0FTYB4-JOICDtzGstGKlI",
-            authDomain: "eclassrecord-wj.firebaseapp.com",
-            databaseURL: "https://eclassrecord-wj.firebaseio.com",
-            projectId: "eclassrecord-wj",
-            storageBucket: "",
-            messagingSenderId: "330072311646"
-          };
-          firebase.initializeApp(config);
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-        <script src="js/create_profile.js"></script>
-    </body>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
 </html>
