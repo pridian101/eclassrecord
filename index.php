@@ -1,6 +1,6 @@
 <?php
 
-//	var_dump(session_status());
+	var_dump(session_status());
 // 	if (!isset($_SESSION['teacher_id'])) {
 // 		header("Location: login.php");
 // 	} 
