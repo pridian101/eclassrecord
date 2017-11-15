@@ -14,9 +14,7 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <!-- Custom styles for this template -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <link href="css/dashboard.css" rel="stylesheet">
     </head>
 
@@ -50,7 +48,8 @@
                     </div>
                 </div>
                 <div class="col-md-10 col-sm-8 main-content">
-                    <h1><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#profileModal" 
+                    <h1>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#profileModal" 
                         data-fname=<?php echo $first_name; ?>
                         data-lname=<?php echo $last_name; ?>
                         data-region=<?php echo $region; ?>
@@ -60,4 +59,58 @@
                         data-sid=<?php echo $school_id; ?>
                         >
                         <?php echo $first_name." ".$last_name ?>
-                        </button></h1>
+                        </button>
+                        <button type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-log-out"></span> Log out
+                        </button>
+                    </h1>
+                    <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title" id="profileModalLabel">Personal Profile</h6>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td><p style="font-weight: bold">First name: </p></td>
+                                                <td id="fname"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p style="font-weight: bold">Last name: </p></td>
+                                                <td id="lname"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p style="font-weight: bold">Region: </p></td>
+                                                <td id="region"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p style="font-weight: bold">Division: </p></td>
+                                                <td id="division"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p style="font-weight: bold">District: </p></td>
+                                                <td id="district"></td>
+                                            </tr>   
+                                            <tr>
+                                                <td><p style="font-weight: bold">School name: </p></td>
+                                                <td id="school"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p style="font-weight: bold">First name: </p></td>
+                                                <td id="sid"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

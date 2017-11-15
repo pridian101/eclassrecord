@@ -1,4 +1,3 @@
-
 <?php
 
 	/**
@@ -11,7 +10,7 @@
 		{
 			session_start();
 			// Create connection
-			$this->conn = new mysqli("db4free.net:3306/elective3", "elective3", "elective3", "elective3");
+			$this->conn = new mysqli("localhost", "elective3", "elective3", "elective3");
 
 			// Check connection
 			if ($this->conn->connect_error) {
